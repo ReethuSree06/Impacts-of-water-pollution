@@ -8,6 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506765515384-028b60a970df');
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
@@ -53,7 +54,7 @@
       background-color: rgba(255, 255, 255, 0.95);
       margin: 30px auto;
       padding: 30px;
-      max-width: 900px;
+      max-width: 1000px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.2);
       text-align: center;
@@ -67,6 +68,24 @@
     .content p {
       font-size: 1.1rem;
       line-height: 1.6;
+    }
+
+    .album {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .album img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .album img:hover {
+      transform: scale(1.05);
     }
 
     footer {
@@ -91,15 +110,28 @@
     <a href="gallery.html">GALLERY</a>
     <a href="contact.html">CONTACT</a>
   </nav>
-<section id="Gallery">
-<div class="container">
-<h2>SURVEY PHOTOS</h1>
-<img src=reethucsp/image1.jpeg"alt="image1>
-</div>
-</section>
-</main>
+
+  <div class="content">
+    <h2>Survey Photos: Water Pollution Awareness</h2>
+    <div class="album">
+      <img src="C:\Users\Jithendri\Desktop\jithi\img1.jpg"width="200"height="200"/>
+      <img src="C:\Users\Jithendri\Desktop\jithi\img2.jpg"width="200"height="200"/>
+      <img src="C:\Users\Jithendri\Desktop\jithi\img3.jpg"width="200"height="200"/>
+      <img src="C:\Users\Jithendri\Desktop\jithi\img4.jpg"width="200"height="200" />
+      <img src="C:\Users\Jithendri\Desktop\jithi\img5.jpg"width="200"height="200" />
+      <img src="C:\Users\Jithendri\Desktop\jithi\img6.jpg"width="200"height="200" />
+      <img src="C:\Users\Jithendri\Desktop\jithi\img7.jpg"width="200"height="200" />
+      <img src="C:\Users\Jithendri\Desktop\jithi\img8.jpg"width="200"height="200" />
+      <img src="C:\Users\Jithendri\Desktop\jithi\img9.jpg"width="200" height="200"/>
+      <img src="C:\Users\Jithendri\Desktop\jithi\img10.jpg"width="200"height="200" />
+      <img src="C:\Users\Jithendri\Desktop\jithi\img11.jpg"width="200"height="200" />
+
+    </div>
+  </div>
+
   <footer>
-    2025 IMPACTS OF WATER POLLUTION TEAM </footer>
+    2025 IMPACTS OF WATER POLLUTION TEAM
+  </footer>
 
 </body>
 </html>
