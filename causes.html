@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impacts of Water Pollution</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506765515384-028b60a970df');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #003d33;
+    }
+
+    header {
+      background-color: #00695c;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #00796b;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #009688;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #004d40;
+    }
+
+    .content {
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      color: #003d33;
+    }
+
+    .content h2 {
+      color: #00695c;
+      margin-bottom: 20px;
+    }
+
+    /* Styles for causes & impacts */
+    .cause {
+      background-color: #d0f0f4;
+      margin: 10px 0;
+      border-left: 6px solid #00796b;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-align: left;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cause:hover {
+      background-color: #b0e0e6;
+    }
+
+    .impact {
+      display: none;
+      background-color: #e0f7fa;
+      border-left: 6px solid #004d40;
+      margin: 5px 0 15px 0;
+      padding: 12px 20px;
+      font-size: 1rem;
+      text-align: left;
+      border-radius: 5px;
+      color: #004d40;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Impacts of Water Pollution</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="activities.html">ACTIVITIES</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="causes.html">CAUSES</a>
+  </nav>
+
+  <div class="content">
+    <h2>Causes and Their Impacts of Water Pollution</h2>
+
+    <div onclick="toggleImpact(0)" class="cause">1. Industrial Waste</div>
+    <div class="impact">
+      Releases toxic chemicals and heavy metals into water bodies, harming aquatic life and making water unsafe for human use.
+    </div>
+
+    <div onclick="toggleImpact(1)" class="cause">2. Agricultural Runoff</div>
+    <div class="impact">
+      Pesticides and fertilizers run into rivers and lakes, causing algal blooms, which deplete oxygen and kill marine life.
+    </div>
+
+    <div onclick="toggleImpact(2)" class="cause">3. Sewage and Wastewater</div>
+    <div class="impact">
+      Untreated sewage contaminates water with harmful bacteria and viruses, leading to waterborne diseases like cholera.
+    </div>
+
+    <div onclick="toggleImpact(3)" class="cause">4. Oil Spills</div>
+    <div class="impact">
+      Oil forms a thick layer on water surfaces, suffocating marine animals and damaging ecosystems.
+    </div>
+
+    <div onclick="toggleImpact(4)" class="cause">5. Plastic Pollution</div>
+    <div class="impact">
+      Plastics take centuries to degrade and are ingested by marine animals, causing injury or death.
+    </div>
+  </div>
+  <div class="album">
+<img src="causes1.jpeg"width="275"height="200"/>
+<img src="causes2.jpeg"width="275"height="200"/>
+</div>
+<footer>
+    2025 IMPACTS OF WATER POLLUTION TEAM
+  </footer>
+
+  <script>
+    function toggleImpact(index) {
+      const impacts = document.querySelectorAll('.impact');
+      const selected = impacts[index];
+
+      if (selected.style.display === "block") {
+        selected.style.display = "none";
+      } else {
+        // Hide all others and show selected
+        impacts.forEach(impact => impact.style.display = "none");
+        selected.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
